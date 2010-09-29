@@ -40,5 +40,15 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         {
             return View();
         }
+
+        /// <summary>
+        /// Adds a movie to the library using the title
+        /// </summary>
+        /// <param name="title">Title to use for the movie</param>
+        /// <returns>Redirect to the index</returns>
+        public ActionResult Create(string title)
+        {
+            return View();
+        }
     }
 }
