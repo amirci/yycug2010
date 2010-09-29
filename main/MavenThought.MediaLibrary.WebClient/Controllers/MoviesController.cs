@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Web.Mvc;
 using MavenThought.MediaLibrary.Domain;
 
@@ -30,6 +31,14 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         public ActionResult Index()
         {
             return View(this._library.Contents.ToList());
+        }
+
+        /// <summary>
+        /// Creates the form to add a movie
+        /// </summary>
+        public ActionResult Create()
+        {
+            return View();
         }
     }
 }
