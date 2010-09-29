@@ -47,11 +47,12 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         /// </summary>
         /// <param name="title">Title to use for the movie</param>
         /// <returns>Redirect to the index</returns>
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Create(string title)
         {
             this._library.Add(new Movie { Title = title });
 
-            return Redirect("/Index");
+            return Redirect("Index");
         }
     }
 }
