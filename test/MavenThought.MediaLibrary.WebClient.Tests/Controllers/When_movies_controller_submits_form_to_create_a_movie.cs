@@ -1,6 +1,8 @@
 using MavenThought.Commons;
+using MavenThought.MediaLibrary.Domain;
 using MvcContrib.TestHelper;
 using MavenThought.Commons.Testing;
+using Rhino.Mocks;
 
 namespace MavenThought.MediaLibrary.WebClient.Tests.Controllers
 {
@@ -27,7 +29,9 @@ namespace MavenThought.MediaLibrary.WebClient.Tests.Controllers
         [It]
         public void Should_add_the_movie_to_the_library()
         {
-            
+            var movieWithSameTitle = Arg<IMovie>.Matches(m => m.Title == this._title);
+
+            Dep<IMediaLibrary>().AssertWasCalled(lib => lib.Add(movieWithSameTitle));
         }
 
         /// <summary>

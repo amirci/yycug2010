@@ -48,7 +48,7 @@ namespace MavenThought.MediaLibrary.WebClient.Controllers
         /// <returns>Redirect to the index</returns>
         public ActionResult Create(string title)
         {
-            return View();
+            return Redirect("/Index");
         }
     }
 }
