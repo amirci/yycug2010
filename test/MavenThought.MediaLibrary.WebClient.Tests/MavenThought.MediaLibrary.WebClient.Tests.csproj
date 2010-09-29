@@ -93,6 +93,7 @@
     <Compile Include="Controllers\When_movies_controller_calls_index_action.cs">
       <DependentUpon>MoviesControllerSpecification.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\When_movies_controller_creates_a_movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
