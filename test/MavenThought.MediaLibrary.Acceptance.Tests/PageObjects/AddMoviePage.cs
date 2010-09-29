@@ -1,4 +1,3 @@
-using System;
 using MavenThought.MediaLibrary.Acceptance.Tests.Utility;
 
 namespace MavenThought.MediaLibrary.Acceptance.Tests.PageObjects
@@ -19,6 +18,14 @@ namespace MavenThought.MediaLibrary.Acceptance.Tests.PageObjects
             {
                 Browser.Instance.TextField("title").Value = value;
             }
+        }
+
+        /// <summary>
+        /// Submit the form
+        /// </summary>
+        public void Submit()
+        {
+            Browser.Instance.Button("Submit").Click();
         }
     }
 }

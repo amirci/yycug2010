@@ -69,7 +69,7 @@ testRunner.When("I follow \"Add Media\"");
 #line 10
 testRunner.And("I enter \"Young Frankenstein\" in the title");
 #line 11
-testRunner.And("I click \"Submit\"");
+testRunner.And("I click Submit");
 #line 12
 testRunner.Then("I should see \"Young Frankenstein\" in the listing");
 #line hidden

@@ -28,5 +28,14 @@ namespace MavenThought.MediaLibrary.Acceptance.Tests.Steps
         {
             this._page.Title = title;
         }
+
+        /// <summary>
+        /// Submit the form
+        /// </summary>
+        [When(@"I click Submit")]
+        public void SubmitForm()
+        {
+            this._page.Submit();
+        }
     }
 }
